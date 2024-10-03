@@ -19,6 +19,7 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class Minecord {
     @SubscribeEvent
+    public static final String MODID = "minecord";
     public static void onChat(ServerChatEvent event) {
         execute(event, event.getPlayer().level(), event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getPlayer(), event.getRawText());
     }
